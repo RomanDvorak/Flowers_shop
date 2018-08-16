@@ -34,3 +34,24 @@ $('.main-slider').slick({
         ]
 
       });
+$('.advantages-slider').slick({
+        arrows: true,
+        slidesToShow: 1,
+        prevArrow: '<div class="slider-arrow slider-arrow_advantages_left"></div>',
+        nextArrow: '<div class="slider-arrow slider-arrow_advantages_right"></div>'
+        /*responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                
+            }
+        }
+        ]*/
+
+      });

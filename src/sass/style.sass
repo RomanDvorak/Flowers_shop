@@ -1,6 +1,7 @@
 body
 	background: #292929
 	color: #fff
+	position: relative
 .section
 	&_title
 		font-family: "Gotham Pro Medium"
@@ -32,10 +33,13 @@ body
 
 
 @import "variables"
+@import "interface"
 @import "header"
 @import "main"
+@import "advantages"
 @import "media"
 
 
 *
-	outline: none
+	outline: none !important
+	box-sizing: border-box

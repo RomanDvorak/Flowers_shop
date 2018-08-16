@@ -1,5 +1,5 @@
 /* Медиа запрос до 992 пикселей */
-@media (max-width: 992px)
+@media (max-width: 991px)
 	.hidden-mobile
 		display: none
 	.header
@@ -26,6 +26,14 @@
 			&:hover
 				transition: 0
 				background: url(../img/main/slider/main_slider_arrow-left.png)
+	.advantages
+		&-slider
+			&_text
+				margin-left: auto
+				margin-right: auto
+				text-align-last: center
+			&_img
+				margin-bottom: 15px
 /* Медиа запрос до 768 пикселей */
 @media (max-width: 768px)
 	.header
@@ -38,3 +46,10 @@
 		&_subtitle
 			font-size: 16px
 			max-width: 360px
+/* Медиа запрос до 576 пикселей */
+@media (max-width: 576px)
+	.main
+		&_button
+			width: 250px
+			height: 60px
+			font-size: 17px

@@ -1,39 +1,82 @@
-.main-slider {
-  margin-bottom: 65px;
+@charset "UTF-8";
+
+body {
+  background: #292929;
+  color: #fff;
+  position: relative;
 }
 
-.main-slider_item {
-  height: 90px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.main-slider_item_img {
-  margin-left: auto;
-  margin-right: auto;
-  width: 90px;
-  height: 90px;
-}
-
-.main_suggestion {
-  font-size: 19px;
-  font-weight: 400;
+.section_title {
+  font-family: "Gotham Pro Medium";
+  font-size: 34px;
+  font-weight: 500;
   text-transform: uppercase;
-  font-family: "Gotham Pro Regular";
-  letter-spacing: 0.19px;
+  letter-spacing: 0.34px;
   text-align: center;
 }
 
-.main_suggestion-bold {
+.section_subtitle {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Gotham Pro Light";
+  font-weight: 300;
+  letter-spacing: 0.18px;
+  max-width: 570px;
+  color: #c6c6c6;
+  margin-bottom: 100px;
+}
+
+.section_subtitle_big {
   font-family: "Gotham Pro Medium";
   font-weight: 500;
+  letter-spacing: 0.18px;
+  color: #ffffff;
+}
+
+hr {
+  background-color: #4c4c4c;
+  margin-bottom: 99px;
+}
+
+.bg-img_1 {
+  position: absolute;
+  background: url("../img/bg/bg-flower_1.png") center no-repeat;
+  background-size: cover;
+  top: 0;
+  /* right: 737px */
+  right: 40%;
+  width: 39px;
+  height: 24px;
+  z-index: -1;
+}
+
+.bg-img_2 {
+  position: absolute;
+  background: url("../img/bg/bg-flower_2.png") center no-repeat;
+  background-size: cover;
+  top: 148px;
+  /* top: 17% */
+  /* left: 295px */
+  left: 16%;
+  width: 93px;
+  height: 153px;
+  z-index: -1;
+}
+
+.bg-img_3 {
+  position: absolute;
+  background: url("../img/bg/bg-flower_3.png") center no-repeat;
+  background-size: cover;
+  top: 409px;
+  /* top: 45% */
+  /* right: 160px */
+  right: 10%;
+  width: 71px;
+  height: 61px;
+  z-index: -1;
 }
 
 .slider-arrow {
@@ -73,41 +116,48 @@
   background: url("../img/main/slider/main_slider_arrow-right-active.png");
   cursor: pointer;
 }
-@charset "UTF-8";
 
-body {
-  background: #292929;
-  color: #fff;
+.slider-arrow_advantages_left {
+  width: 21px;
+  height: 34px;
+  background: url("../img/advantages/clients/slider/advantages-slider_arrow-left.png") center no-repeat;
+  left: 0;
+  top: 40%;
 }
 
-.section_title {
-  font-family: "Gotham Pro Medium";
-  font-size: 34px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.34px;
-  text-align: center;
+.slider-arrow_advantages_left:hover {
+  cursor: pointer;
 }
 
-.section_subtitle {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-family: "Gotham Pro Light";
-  font-weight: 300;
-  letter-spacing: 0.18px;
-  max-width: 570px;
-  color: #c6c6c6;
-  margin-bottom: 100px;
+.slider-arrow_advantages_right {
+  width: 21px;
+  height: 34px;
+  background: url("../img/advantages/clients/slider/advantages-slider_arrow-right.png") center no-repeat;
+  right: 0;
+  top: 40%;
 }
 
-.section_subtitle_big {
-  font-family: "Gotham Pro Medium";
-  font-weight: 500;
-  letter-spacing: 0.18px;
+.slider-arrow_advantages_right:hover {
+  cursor: pointer;
+}
+
+.button {
+  border: 3px solid transparent;
+  background-color: #ff2e55;
   color: #ffffff;
+  font-family: "Gotham Pro Regular";
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.18px;
+}
+
+.button:hover {
+  -webkit-box-shadow: 0 0 16px rgba(242, 72, 65, 0.39);
+  box-shadow: 0 0 16px rgba(242, 72, 65, 0.39);
+  border: 3px solid #ff2e55;
+  background-color: #ff1844;
+  cursor: pointer;
 }
 
 .header {
@@ -191,12 +241,20 @@ body {
   text-decoration: none;
 }
 
+.main {
+  text-align: center;
+  margin-bottom: 77px;
+}
+
 .main-slider {
   margin-bottom: 65px;
 }
 
 .main-slider_item {
   height: 90px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,6 +280,7 @@ body {
   font-family: "Gotham Pro Regular";
   letter-spacing: 0.19px;
   text-align: center;
+  margin-bottom: 36px;
 }
 
 .main_suggestion-bold {
@@ -229,47 +288,115 @@ body {
   font-weight: 500;
 }
 
-.slider-arrow {
-  position: absolute;
-  top: 0;
-  z-index: 99;
+.main_button {
+  width: 300px;
+  height: 70px;
+}
+
+.advantages_title {
+  font-family: "Gotham Pro Regular";
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  text-align: center;
+  margin-bottom: 96px;
+}
+
+.advantages-slider {
+  margin-bottom: 98px;
+}
+
+.advantages-slider_img {
+  width: 220px;
+  height: 220px;
+  background: url("../img/advantages/clients/client-img.png");
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.advantages-slider_img_text {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Gotham Pro Medium";
+}
+
+.advantages-slider_img_text_town {
+  font-family: "Gotham Pro Regular";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.18px;
+}
+
+.advantages-slider_text {
+  max-width: 481px;
+  font-family: "Gotham Pro Regular";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.18px;
+}
+
+.advantages-slider_text-link {
+  color: #f24841;
+  text-decoration: underline;
+}
+
+.advantages-slider_text-link:hover {
+  color: #f03129;
+}
+
+.features-blocks {
+  margin-bottom: 101px;
+}
+
+.features-blocks .features-block {
+  text-align: center;
+}
+
+.features-blocks .features-block_img {
+  max-height: 66px;
+  max-width: 66px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features-blocks .features-block_img img {
   height: 100%;
-  width: 22px;
+  width: 100%;
 }
 
-.slider-arrow_main_left {
-  width: 8px;
-  height: 14px;
-  background: url("../img/main/slider/main_slider_arrow-left.png") center no-repeat;
-  left: 0;
-  top: 40%;
-  -webkit-transition: .4s;
-  transition: .4s;
+.features-blocks .features-block_descr {
+  width: 221px;
+  color: #ffffff;
+  font-family: "Gotham Pro Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.slider-arrow_main_left:hover {
-  background: url("../img/main/slider/main_slider_arrow-left-active.png");
-  cursor: pointer;
-}
-
-.slider-arrow_main_right {
-  width: 8px;
-  height: 14px;
-  background: url("../img/main/slider/main_slider_arrow-right.png") center no-repeat;
-  right: 0;
-  top: 40%;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider-arrow_main_right:hover {
-  background: url("../img/main/slider/main_slider_arrow-right-active.png");
-  cursor: pointer;
+.features-blocks .features-block_descr_last {
+  width: 262px;
 }
 
 /* Медиа запрос до 992 пикселей */
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .hidden-mobile {
     display: none;
   }
@@ -299,6 +426,16 @@ body {
     transition: 0;
     background: url("../img/main/slider/main_slider_arrow-left.png");
   }
+
+  .advantages-slider_text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align-last: center;
+  }
+
+  .advantages-slider_img {
+    margin-bottom: 15px;
+  }
 }
 
 /* Медиа запрос до 768 пикселей */
@@ -322,6 +459,18 @@ body {
   }
 }
 
+/* Медиа запрос до 576 пикселей */
+
+@media (max-width: 576px) {
+  .main_button {
+    width: 250px;
+    height: 60px;
+    font-size: 17px;
+  }
+}
+
 * {
-  outline: none;
+  outline: none !important;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
