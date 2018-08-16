@@ -1,0 +1,49 @@
+.main
+	&-slider
+		margin-bottom: 65px
+		&_item
+			height: 90px
+			display: flex
+			justify-content: center
+			align-items: center
+			&_img
+				margin-left: auto
+				margin-right: auto
+				width: 90px
+				height: 90px
+	&_suggestion
+		font-size: 19px
+		font-weight: 400
+		text-transform: uppercase
+		font-family: "Gotham Pro Regular"
+		letter-spacing: 0.19px
+		text-align: center
+		&-bold
+			font-family: "Gotham Pro Medium"
+			font-weight: 500
+.slider-arrow
+	position: absolute
+	top: 0
+	z-index: 99
+	height: 100%
+	width: 22px
+	&_main_left
+		width: 8px
+		height: 14px
+		background: url(../img/main/slider/main_slider_arrow-left.png) center no-repeat
+		left: 0
+		top: 40%
+		transition: .4s
+		&:hover
+			background: url(../img/main/slider/main_slider_arrow-left-active.png)
+			cursor: pointer
+	&_main_right
+		width: 8px
+		height: 14px
+		background: url(../img/main/slider/main_slider_arrow-right.png) center no-repeat
+		right: 0
+		top: 40%
+		transition: .4s
+		&:hover
+			background: url(../img/main/slider/main_slider_arrow-right-active.png)
+			cursor: pointer

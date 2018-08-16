@@ -1,0 +1,40 @@
+/* Медиа запрос до 992 пикселей */
+@media (max-width: 992px)
+	.hidden-mobile
+		display: none
+	.header
+		&_text
+			&-link
+				&:hover
+					color: $link-color
+		&-contacts
+			&_phone
+				&:hover
+					text-decoration: none
+					color: #fff
+				&_text
+					&_link
+						&:hover
+							color: darken($link-color, 18)
+							text-decoration: underline
+	.slider-arrow
+		&_main_right
+			&:hover
+				transition: 0
+				background: url(../img/main/slider/main_slider_arrow-right.png)
+		&_main_left
+			&:hover
+				transition: 0
+				background: url(../img/main/slider/main_slider_arrow-left.png)
+/* Медиа запрос до 768 пикселей */
+@media (max-width: 768px)
+	.header
+		height: 250px
+		&-contacts_phone
+			font-size: 18px
+	.section
+		&_title
+			font-size: 26px
+		&_subtitle
+			font-size: 16px
+			max-width: 360px

@@ -1,0 +1,327 @@
+.main-slider {
+  margin-bottom: 65px;
+}
+
+.main-slider_item {
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-slider_item_img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90px;
+  height: 90px;
+}
+
+.main_suggestion {
+  font-size: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Gotham Pro Regular";
+  letter-spacing: 0.19px;
+  text-align: center;
+}
+
+.main_suggestion-bold {
+  font-family: "Gotham Pro Medium";
+  font-weight: 500;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  height: 100%;
+  width: 22px;
+}
+
+.slider-arrow_main_left {
+  width: 8px;
+  height: 14px;
+  background: url("../img/main/slider/main_slider_arrow-left.png") center no-repeat;
+  left: 0;
+  top: 40%;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider-arrow_main_left:hover {
+  background: url("../img/main/slider/main_slider_arrow-left-active.png");
+  cursor: pointer;
+}
+
+.slider-arrow_main_right {
+  width: 8px;
+  height: 14px;
+  background: url("../img/main/slider/main_slider_arrow-right.png") center no-repeat;
+  right: 0;
+  top: 40%;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider-arrow_main_right:hover {
+  background: url("../img/main/slider/main_slider_arrow-right-active.png");
+  cursor: pointer;
+}
+@charset "UTF-8";
+
+body {
+  background: #292929;
+  color: #fff;
+}
+
+.section_title {
+  font-family: "Gotham Pro Medium";
+  font-size: 34px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.34px;
+  text-align: center;
+}
+
+.section_subtitle {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Gotham Pro Light";
+  font-weight: 300;
+  letter-spacing: 0.18px;
+  max-width: 570px;
+  color: #c6c6c6;
+  margin-bottom: 100px;
+}
+
+.section_subtitle_big {
+  font-family: "Gotham Pro Medium";
+  font-weight: 500;
+  letter-spacing: 0.18px;
+  color: #ffffff;
+}
+
+.header {
+  height: 150px;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 77px;
+}
+
+.header_img {
+  margin-top: 17px;
+  width: 156px;
+  height: 40px;
+  background: url("../img/header/header_logo.png");
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header_text {
+  margin-top: 17px;
+  width: 119px;
+  font-size: 11px;
+  font-weight: 300;
+  font-family: "Gotham Pro Light";
+  letter-spacing: 0.12px;
+  color: #dfdfdf;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header_text-link {
+  color: #ff3469;
+  font-family: "Gotham Pro Medium";
+  font-weight: 500;
+  letter-spacing: 0.12px;
+  text-decoration: none;
+}
+
+.header_text-link:hover {
+  color: #e7003c;
+  text-decoration: none;
+}
+
+.header-contacts_phone {
+  font-family: "Gotham Pro Regular";
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: #fff;
+}
+
+.header-contacts_phone:hover {
+  color: #d1d1d1;
+  text-decoration: none;
+}
+
+.header-contacts_phone_text {
+  color: #9b9b9b;
+  font-family: "Gotham Pro Regular";
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.12px;
+}
+
+.header-contacts_phone_text_link {
+  color: #d70038;
+  font-family: "Gotham Pro Regular";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.16px;
+  text-decoration: underline;
+}
+
+.header-contacts_phone_text_link:hover {
+  color: #c30033;
+  text-decoration: none;
+}
+
+.main-slider {
+  margin-bottom: 65px;
+}
+
+.main-slider_item {
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-slider_item_img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90px;
+  height: 90px;
+}
+
+.main_suggestion {
+  font-size: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Gotham Pro Regular";
+  letter-spacing: 0.19px;
+  text-align: center;
+}
+
+.main_suggestion-bold {
+  font-family: "Gotham Pro Medium";
+  font-weight: 500;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  height: 100%;
+  width: 22px;
+}
+
+.slider-arrow_main_left {
+  width: 8px;
+  height: 14px;
+  background: url("../img/main/slider/main_slider_arrow-left.png") center no-repeat;
+  left: 0;
+  top: 40%;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider-arrow_main_left:hover {
+  background: url("../img/main/slider/main_slider_arrow-left-active.png");
+  cursor: pointer;
+}
+
+.slider-arrow_main_right {
+  width: 8px;
+  height: 14px;
+  background: url("../img/main/slider/main_slider_arrow-right.png") center no-repeat;
+  right: 0;
+  top: 40%;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider-arrow_main_right:hover {
+  background: url("../img/main/slider/main_slider_arrow-right-active.png");
+  cursor: pointer;
+}
+
+/* Медиа запрос до 992 пикселей */
+
+@media (max-width: 992px) {
+  .hidden-mobile {
+    display: none;
+  }
+
+  .header_text-link:hover {
+    color: #ff3469;
+  }
+
+  .header-contacts_phone:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .header-contacts_phone_text_link:hover {
+    color: #d70038;
+    text-decoration: underline;
+  }
+
+  .slider-arrow_main_right:hover {
+    -webkit-transition: 0;
+    transition: 0;
+    background: url("../img/main/slider/main_slider_arrow-right.png");
+  }
+
+  .slider-arrow_main_left:hover {
+    -webkit-transition: 0;
+    transition: 0;
+    background: url("../img/main/slider/main_slider_arrow-left.png");
+  }
+}
+
+/* Медиа запрос до 768 пикселей */
+
+@media (max-width: 768px) {
+  .header {
+    height: 250px;
+  }
+
+  .header-contacts_phone {
+    font-size: 18px;
+  }
+
+  .section_title {
+    font-size: 26px;
+  }
+
+  .section_subtitle {
+    font-size: 16px;
+    max-width: 360px;
+  }
+}
+
+* {
+  outline: none;
+}

@@ -1,0 +1,57 @@
+.header
+	height: 150px
+	background-color: transparent
+	display: flex
+	align-items: center
+	margin-bottom: 77px
+	&_img
+		margin-top: 17px
+		width: 156px
+		height: 40px
+		background: url('../img/header/header_logo.png')
+		margin-left: auto
+		margin-right: auto
+	&_text
+		margin-top: 17px
+		width: 119px
+		font-size: 11px
+		font-weight: 300
+		font-family: "Gotham Pro Light"
+		letter-spacing: 0.12px
+		color: #dfdfdf
+		margin-left: auto
+		margin-right: auto
+		&-link
+			color: $link-color
+			font-family: "Gotham Pro Medium"
+			font-weight: 500
+			letter-spacing: 0.12px
+			text-decoration: none
+			&:hover
+				color: darken($link-color, 15)
+				text-decoration: none
+	&-contacts_phone
+		font-family: "Gotham Pro Regular"
+		font-size: 22px
+		font-weight: 500
+		letter-spacing: 0.2px
+		color: #fff
+		&:hover
+			color: darken(#fff, 18)
+			text-decoration: none
+		&_text
+			color: #9b9b9b
+			font-family: "Gotham Pro Regular"
+			font-size: 13px
+			font-weight: 400
+			letter-spacing: 0.12px
+			&_link
+				color: darken($link-color, 18)
+				font-family: "Gotham Pro Regular"
+				font-size: 18px
+				font-weight: 400
+				letter-spacing: 0.16px
+				text-decoration: underline
+				&:hover
+					color: darken($link-color, 22)
+					text-decoration: none
