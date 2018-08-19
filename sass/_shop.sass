@@ -1,0 +1,142 @@
+.shop
+	text-align: center
+	padding-bottom: 68px
+	&_title
+		font-family: "Gotham Pro Medium"
+		font-size: 30px
+		font-weight: 500
+		text-transform: uppercase
+		letter-spacing: 0.3px
+		margin-bottom: 27px
+		&-red
+			color: #ff1844
+	&_subtitle
+		color: #ffffff
+		font-family: "Gotham Pro Regular"
+		font-size: 18px
+		font-weight: 400
+		letter-spacing: 0.18px
+		text-transform: none
+		margin-bottom: 77px
+		max-width: 794px
+	&_item
+		width: 210px
+		height: 375px
+		border: 3px solid #ffffff
+		padding-top: 20px
+		margin-bottom: 75px
+		text-align: center
+		margin-left: auto
+		margin-right: auto
+		&_img
+			width: 210px
+			height: 72px
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 23px
+			img
+				max-height: 100%
+				max-width: 100%
+		&_name
+			font-family: "Gotham Pro Regular"
+			font-size: 20px
+			font-weight: 500
+			text-transform: uppercase
+			letter-spacing: 0.2px
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 15px
+		&_select-color
+			font-family: "Gotham Pro Regular"
+			font-size: 14px
+			font-weight: 400
+			letter-spacing: 0.14px
+		&_text-count
+			font-family: "Gotham Pro Regular"
+			font-size: 14px
+			font-weight: 400
+			letter-spacing: 0.14px
+		&_count
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-bottom: 20px
+			&_minus
+				margin-top: 5px
+				&:hover
+					cursor: pointer
+			&_plus
+				margin-top: 5px
+				&:hover
+					cursor: pointer
+			&_number
+				width: 40px
+				height: 40px
+				border: 2px solid #ffffff
+				display: flex
+				align-items: center
+				justify-content: center
+				margin-top: 8px
+				margin-right: 17px
+				margin-left: 17px
+		&_button
+			width: 140px
+			height: 40px
+			background-color: #f24841
+			font-family: "Gotham Pro Regular"
+			font-size: 14px
+			font-weight: 500
+			text-transform: uppercase
+			letter-spacing: 0.14px
+			margin-bottom: 43px
+			&:hover
+				box-shadow: 0 0 16px rgba(242, 72, 65, 0.39)
+				background-color: #ff1844
+				border: transparent
+	&_link-more
+		color: #f24841
+		font-family: "Gotham Pro Regular"
+		font-size: 14px
+		font-weight: 400
+		letter-spacing: 0.14px
+		text-decoration: underline
+		&::after
+			content: ''
+			margin-left: 7px
+			margin-bottom: 2px
+			width: 10px
+			height: 4px
+			background: url(../img/shop/shop_link-more_arrow.png) center no-repeat
+			display: inline-block
+		&:hover
+			color: darken(#f24841, 10)
+.colors
+	margin-bottom: 7px
+	.color
+		width: 20px
+		height: 20px
+		display: inline-block
+		margin-right: 5px
+		&:hover
+			cursor: pointer
+		&-white
+			background-color: #ffffff
+			&:hover
+				box-shadow: 0 0 16px #fff
+		&-coffee
+			background-color: #f7b496
+			&:hover
+				box-shadow: 0 0 16px #f7b496
+		&-lilac
+			background-color: #ed366e
+			&:hover
+				box-shadow: 0 0 16px #ed366e
+		&-red
+			background-color: #ff0000
+			&:hover
+				box-shadow: 0 0 16px #ff0000
+		&-blue
+			background-color: #12129d
+			margin-right: 0
+			&:hover
+				box-shadow: 0 0 16px #12129d

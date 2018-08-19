@@ -1,0 +1,537 @@
+.overlay
+	position: fixed
+	display: none
+	top: 0
+	width: 100%
+	height: 100%
+	z-index: 3
+	background-color: rgba(0, 0, 0, 0.4)
+	.popup
+		position: fixed
+		left: 50%
+		top: 100px
+		width: 752px
+		transform: translateX(-50%)
+		display: none
+		&-close
+			position: absolute
+			right: -20px
+			top: -37px
+			font-size: 35px
+			color:#fff
+			font-weight: 300
+			cursor: pointer
+		&-title
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 100%
+			min-height: 71px
+			margin: 0
+			background-color: #cc0b22
+			color: #fff
+			text-transform: uppercase
+			font-size: 20px
+			font-weight: 500
+			text-align: center
+			span
+				line-height: 70px
+		&-form
+			background: #101010
+			padding: 35px 88px 50px 88px
+			color:#fff
+			border: 1px solid #5d5d5d
+			border-top: none
+			&-header
+				padding: 0
+				padding-top: 10px
+				font-size: 30px
+				font-weight: 400
+				line-height: 27px
+				text-align: center
+				span
+					font-size: 24px
+			&__label
+				display: block
+				margin-top: 12px
+				font-size: 20px
+				font-weight: 300
+				line-height: 30px
+			&__input
+				width: 365px
+				height: 56px
+				margin-top: 10px
+				padding-left: 12px
+				vertical-align: middle
+				color: #373737
+				font-size: 14px
+				font-weight: 300
+				border-radius: 4px
+			&__btn
+				width: 180px
+				height: 56px
+				margin-left: 16px
+				margin-top: 17px
+				vertical-align: middle
+				font-size: 15px
+				font-weight: 500
+				line-height: 22px
+				background-color: #ff2e55
+				border-radius: 4px
+				border: none
+				&:hover
+					box-shadow: 0 0 22px rgba(242, 72, 65, 0.50)
+					background-color: #ff1844
+					cursor: pointer
+					border: none
+	&-rose
+		position: fixed
+		display: none
+		top: 0
+		width: 100%
+		height: 100%
+		z-index: 3
+		background-color: rgba(0, 0, 0, 0.4)
+		.popup-rose
+			position: fixed
+			display: none
+			left: 50%
+			top: 150px
+			width: 516px
+			height: 306px
+			transform: translateX(-50%)
+			background-color: #f8f6f0
+			padding: 30px 58px 35px
+			&-left_img
+				position: absolute
+				bottom: 0
+				left: 0
+				width: 57px
+				height: 58px
+				background: url(../img/modals/rose/modal-rose-img-left.png) center no-repeat
+			&-right_img
+				position: absolute
+				top: 0
+				right: 0
+				width: 107px
+				height: 93px
+				background: url(../img/modals/rose/modal-rose-img-right.png) center no-repeat
+			&-close
+				position: absolute
+				right: -50px
+				top: 0
+				font-size: 35px
+				color:#fff
+				font-weight: 300
+				cursor: pointer
+				border: 2px solid #fff
+				width: 40px
+				height: 40px
+				border-radius: 50%
+				display: flex
+				align-items: center
+				justify-content: center
+				padding-bottom: 5px
+			&-title
+				color: #f64f6b
+				font-family: "Gotham Pro Medium"
+				font-size: 24px
+				font-weight: 500
+				text-transform: uppercase
+				letter-spacing: 0.24px
+				margin-bottom: 15px
+			&-descr
+				width: 410px
+				color: #1c1c1c
+				font-family: "Gotham Pro Regular"
+				font-size: 16px
+				font-weight: 400
+				letter-spacing: 0.16px
+
+
+	&-lily
+		position: fixed
+		display: none
+		top: 0
+		width: 100%
+		height: 100%
+		z-index: 3
+		background-color: rgba(0, 0, 0, 0.4)
+		.popup-lily
+			position: fixed
+			display: none
+			left: 50%
+			top: 150px
+			width: 516px
+			height: 306px
+			transform: translateX(-50%)
+			background-color: #f8f6f0
+			padding: 20px 58px 35px 45px
+			&-right_img
+				position: absolute
+				z-index: -1
+				top: 0
+				right: 0
+				width: 107px
+				height: 93px
+				background: url(../img/modals/lily/modal-lily-img-right.png) center no-repeat
+			&-close
+				position: absolute
+				right: -50px
+				top: 0
+				font-size: 35px
+				color:#fff
+				font-weight: 300
+				cursor: pointer
+				border: 2px solid #fff
+				width: 40px
+				height: 40px
+				border-radius: 50%
+				display: flex
+				align-items: center
+				justify-content: center
+				padding-bottom: 5px
+			&-title
+				color: #f64f6b
+				font-family: "Gotham Pro Medium"
+				font-size: 24px
+				font-weight: 500
+				text-transform: uppercase
+				letter-spacing: 0.24px
+				margin-bottom: 10px
+			&-descr
+				width: 400px
+				color: #1c1c1c
+				font-family: "Gotham Pro Regular"
+				font-size: 16px
+				font-weight: 400
+				letter-spacing: 0.16px
+	&-chrysanthemum
+		position: fixed
+		display: none
+		top: 0
+		width: 100%
+		height: 100%
+		z-index: 3
+		background-color: rgba(0, 0, 0, 0.4)
+		.popup-chrysanthemum
+			position: fixed
+			display: none
+			left: 50%
+			top: 150px
+			width: 516px
+			height: 306px
+			transform: translateX(-50%)
+			background-color: #f8f6f0
+			padding: 20px 58px 35px 45px
+			&-right_img
+				position: absolute
+				z-index: -1
+				top: 0
+				right: 0
+				width: 107px
+				height: 93px
+				background: url(../img/modals/chrysanthemum/modal-chrysanthemum-img-right.png) center no-repeat
+			&-close
+				position: absolute
+				right: -50px
+				top: 0
+				font-size: 35px
+				color:#fff
+				font-weight: 300
+				cursor: pointer
+				border: 2px solid #fff
+				width: 40px
+				height: 40px
+				border-radius: 50%
+				display: flex
+				align-items: center
+				justify-content: center
+				padding-bottom: 5px
+			&-title
+				color: #f64f6b
+				font-family: "Gotham Pro Medium"
+				font-size: 24px
+				font-weight: 500
+				text-transform: uppercase
+				letter-spacing: 0.24px
+				margin-bottom: 10px
+			&-descr
+				width: 400px
+				color: #1c1c1c
+				font-family: "Gotham Pro Regular"
+				font-size: 16px
+				font-weight: 400
+				letter-spacing: 0.16px
+	&-lilac
+		position: fixed
+		display: none
+		top: 0
+		width: 100%
+		height: 100%
+		z-index: 3
+		background-color: rgba(0, 0, 0, 0.4)
+		.popup-lilac
+			position: fixed
+			display: none
+			left: 50%
+			top: 150px
+			width: 516px
+			height: 306px
+			transform: translateX(-50%)
+			background-color: #f8f6f0
+			padding: 20px 58px 35px 45px
+			&-right_img
+				position: absolute
+				z-index: -1
+				top: 0
+				right: 0
+				width: 107px
+				height: 93px
+				background: url(../img/modals/lilac/modal-lilac-img-right.png) center no-repeat
+			&-close
+				position: absolute
+				right: -50px
+				top: 0
+				font-size: 35px
+				color:#fff
+				font-weight: 300
+				cursor: pointer
+				border: 2px solid #fff
+				width: 40px
+				height: 40px
+				border-radius: 50%
+				display: flex
+				align-items: center
+				justify-content: center
+				padding-bottom: 5px
+			&-title
+				color: #f64f6b
+				font-family: "Gotham Pro Medium"
+				font-size: 24px
+				font-weight: 500
+				text-transform: uppercase
+				letter-spacing: 0.24px
+				margin-bottom: 10px
+			&-descr
+				width: 400px
+				color: #1c1c1c
+				font-family: "Gotham Pro Regular"
+				font-size: 16px
+				font-weight: 400
+				letter-spacing: 0.16px
+	&-yellow_chrysanthemums
+		position: fixed
+		display: none
+		top: 0
+		width: 100%
+		height: 100%
+		z-index: 3
+		background-color: rgba(0, 0, 0, 0.4)
+		.popup-yellow_chrysanthemums
+			position: fixed
+			display: none
+			left: 50%
+			top: 150px
+			width: 516px
+			height: 306px
+			transform: translateX(-50%)
+			background-color: #f8f6f0
+			padding: 45px 58px 35px 58px
+			&-right_img
+				position: absolute
+				z-index: -1
+				top: 0
+				right: 0
+				width: 107px
+				height: 93px
+				background: url(../img/modals/yellow_chrysanthemums/modal-yellow_chrysanthemums-img-right.png) center no-repeat
+			&-close
+				position: absolute
+				right: -50px
+				top: 0
+				font-size: 35px
+				color:#fff
+				font-weight: 300
+				cursor: pointer
+				border: 2px solid #fff
+				width: 40px
+				height: 40px
+				border-radius: 50%
+				display: flex
+				align-items: center
+				justify-content: center
+				padding-bottom: 5px
+			&-title
+				color: #f64f6b
+				font-family: "Gotham Pro Medium"
+				font-size: 24px
+				font-weight: 500
+				text-transform: uppercase
+				letter-spacing: 0.24px
+				margin-bottom: 10px
+			&-descr
+				width: 400px
+				color: #1c1c1c
+				font-family: "Gotham Pro Regular"
+				font-size: 16px
+				font-weight: 400
+				letter-spacing: 0.16px
+	&-lily-2
+		position: fixed
+		display: none
+		top: 0
+		width: 100%
+		height: 100%
+		z-index: 3
+		background-color: rgba(0, 0, 0, 0.4)
+		.popup-lily-2
+			position: fixed
+			display: none
+			left: 50%
+			top: 150px
+			width: 516px
+			height: 306px
+			transform: translateX(-50%)
+			background-color: #f8f6f0
+			padding: 20px 58px 35px 45px
+			&-right_img
+				position: absolute
+				z-index: -1
+				top: 0
+				right: 0
+				width: 107px
+				height: 93px
+				background: url(../img/modals/lily/modal-lily-2-img-right.png) center no-repeat
+			&-close
+				position: absolute
+				right: -50px
+				top: 0
+				font-size: 35px
+				color:#fff
+				font-weight: 300
+				cursor: pointer
+				border: 2px solid #fff
+				width: 40px
+				height: 40px
+				border-radius: 50%
+				display: flex
+				align-items: center
+				justify-content: center
+				padding-bottom: 5px
+			&-title
+				color: #f64f6b
+				font-family: "Gotham Pro Medium"
+				font-size: 24px
+				font-weight: 500
+				text-transform: uppercase
+				letter-spacing: 0.24px
+				margin-bottom: 10px
+			&-descr
+				width: 400px
+				color: #1c1c1c
+				font-family: "Gotham Pro Regular"
+				font-size: 16px
+				font-weight: 400
+				letter-spacing: 0.16px
+.popup
+	&-left_img
+		position: absolute
+		width: 86px
+		height: 142px
+		background: url(../img/modals/modals-left-img.png) center no-repeat
+		left: 25%
+		top: 260px
+	&-right_img
+		position: absolute
+		background: url(../img/modals/modals-right-img.png) center no-repeat
+		top: 400px
+		right: 30%
+		width: 36px
+		height: 30px
+
+
+
+
+/* Букеты */
+.overlay-bouquet
+	display: none
+	position: fixed
+	top: 0
+	width: 100%
+	height: 100%
+	z-index: 100
+	background-color: rgba(0, 0, 0, 0.4)
+	.bouquet-1
+		display: none
+		position: fixed
+		height: 60%
+		width: 70%
+		top: 15%
+		left: 15%
+		border: #4c4c4c solid 2px
+		img
+			width: 100%
+			height: 100%
+	.bouquet-2
+		display: none
+		position: fixed
+		height: 60%
+		width: 70%
+		top: 15%
+		left: 15%
+		border: #4c4c4c solid 2px
+		img
+			width: 100%
+			height: 100%
+	.bouquet-3
+		display: none
+		position: fixed
+		height: 60%
+		width: 70%
+		top: 15%
+		left: 15%
+		border: #4c4c4c solid 2px
+		img
+			width: 100%
+			height: 100%
+/* Окно благодарности */
+.overlay-thanks
+	display: none
+	position: fixed
+	top: 0
+	width: 100%
+	height: 100%
+	z-index: 100
+	background-color: rgba(0, 0, 0, 0.4)
+	.popup-thanks
+		position: fixed
+		left: 50%
+		top: 200px
+		width: 460px
+		transform: translateX(-50%)
+		background-color: #F4ECD9
+		padding: 0
+		text-align: center
+		padding-top: 25px
+		&_text
+			p
+				color: #101010
+				font-family: "Gotham Pro Medium"
+				font-size: 24px
+				font-weight: 500
+				letter-spacing: 0.16px
+		&_button
+			background-color: #101010
+			height: 50px
+			width: 50%
+			margin-top: 40px
+			margin-bottom: 30px
+			font-family: "Gotham Pro medium"
+			font-weight: 500
+			border-radius: 5px
+			color: darken(#fff, 12)
+			&:hover
+				border: transparent
+				box-shadow: none
+				color: #fff

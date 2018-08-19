@@ -1,0 +1,236 @@
+/* Медиа запрос до 1920 пикселей */
+@media (max-width: 1920px)
+	.popup
+		&-left_img
+			left: 22%
+		&-right_img
+			right: 27%
+/* Медиа запрос до 1400 пикселей */
+@media (max-width: 1400px)
+	.popup
+		&-left_img
+			left: 13%
+		&-right_img
+			right: 14%
+/* Медиа запрос до 1199 пикселей */
+@media (max-width: 1199px)
+	.popup
+		&-left_img
+			display: none
+		&-right_img
+			display: none
+	.shop
+		&_item
+			margin-bottom: 62px
+/* Медиа запрос до 991 пикселя */
+@media (max-width: 991px)
+	.button
+		&:hover
+			box-shadow: none
+			border: transparent
+			background-color: #ff2e55
+	.header
+		&_text
+			&-link
+				&:hover
+					color: $link-color
+		&-contacts
+			&_phone
+				&:hover
+					text-decoration: none
+					color: #fff
+				&_text
+					&_link
+						&:hover
+							color: darken($link-color, 18)
+							text-decoration: underline
+	.advantages
+		&-slider
+			&_text
+				&-link
+					&:hover
+						color: #f24841
+	.shop
+		&_item
+			&_button
+				&:hover
+					background-color: #f24841
+					box-shadow: none
+		&_link-more
+			&:hover
+				color: #f24841
+	.slider-arrow
+		&_main_right
+			&:hover
+				transition: 0
+				background: url(../img/main/slider/main_slider_arrow-right.png)
+		&_main_left
+			&:hover
+				transition: 0
+				background: url(../img/main/slider/main_slider_arrow-left.png)
+	.advantages
+		&-slider
+			&_text
+				margin-left: auto
+				margin-right: auto
+				text-align-last: center
+			&_img
+				margin-bottom: 15px
+	.contacts
+		&_link
+			&-delivery
+				&:hover
+					color: #fff
+			&-payment
+				&:hover
+					color: #fff
+	.offer
+		&_title
+			&_underline
+				&:hover
+					color: #fff
+		&-contacts_phone
+			&:hover
+				text-decoration: none
+				color: #fff
+	.contacts
+		&_right_text
+			&_phone
+				&:hover
+					color: #ffffff
+	.footer
+		&_text
+			&-link
+				&:hover
+					color: $link-color
+					text-decoration: none
+		&_designer
+			&_name
+				&:hover
+					color: #101010
+	.overlay
+		.popup
+			&-form
+				&__btn
+					&:hover
+						box-shadow: none
+						background-color: #ff2e55
+/* Медиа запрос до 840 пикселей */
+@media (max-width: 840px)
+	.overlay
+		.popup
+				width: 340px
+				top: 30px
+				&-title
+					height: 40px
+					line-height: 40px
+				&-form
+					padding: 0px 0px 20px 0px
+					&-header
+						.little-text
+							font-size: 20px
+					&__input
+						width: 230px
+					&__btn
+						margin-left: 0
+	.overlay-thanks
+		.popup-thanks
+				width: 340px
+				&_text
+					p
+						font-size: 22px
+				&_button
+					width: 50%
+/* Медиа запрос до 767 пикселей */
+@media (max-width: 767px)
+	.header
+		height: 250px
+		&-contacts_phone
+			font-size: 18px
+	.section
+		&_title
+			font-size: 26px
+		&_subtitle
+			font-size: 16px
+			max-width: 360px
+	.slider-arrow
+		&_advantages_left
+			top: 22%
+		&_advantages_right
+			top: 22%
+	.shop
+		&_item
+			margin-bottom: 62px
+	.contacts
+		&_call
+			margin-bottom: 20px
+	.footer
+		&_img
+			margin-bottom: 15px
+/* Медиа запрос до 575 пикселей */
+@media (max-width: 575px)
+	.main
+		&_button
+			width: 250px
+			height: 60px
+			font-size: 17px
+	.slider-arrow
+		&_advantages_left
+			top: 93px
+		&_advantages_right
+			top: 93px
+	.shop
+		&_item
+			margin-bottom: 35px
+	.offer
+		&_title
+			font-size: 20px
+			font-weight: 400
+			margin-bottom: 35px
+		&-contacts_phone
+			font-size: 22px
+	.contacts
+		&_call
+			&_text
+				&_img
+					margin-left: 10px
+	.footer
+		&_img
+			margin-left: auto
+			margin-right: auto
+/* Медиа запрос до 450 пикселей */
+@media (max-width: 450px)
+	.slider-arrow
+		&_advantages_left
+			top: 95px
+		&_advantages_right
+			top: 95px
+/* Медиа запрос до 400 пикселей */
+@media (max-width: 400px)
+	.overlay
+		.popup
+				width: 245px
+				top: 30px
+				&-title
+					height: 40px
+					span
+						line-height: 26px
+				&-form
+					padding: 0px 0px 20px 0px
+					&-header
+						.little-text
+							font-size: 20px
+					&__input
+						width: 180px
+					&__btn
+						margin-left: 0
+	.overlay-thanks
+		.popup-thanks
+			top: 30px
+			width: 245px
+/* Медиа запрос до 340 пикселей */
+@media (max-width: 340px)
+	.advantages
+		&-slider
+			&_text
+				text-align-last: justify

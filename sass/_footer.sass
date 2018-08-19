@@ -1,0 +1,39 @@
+.footer
+	background-color: #fff
+	display: flex
+	align-items: center
+	padding-top: 50px
+	padding-bottom: 43px
+	&_img
+		margin-top: 9px
+		width: 156px
+		height: 40px
+		background: url('../img/footer/footer_logo.png') center no-repeat
+	&_text
+		width: 129px
+		color: #292929
+		font-size: 12px
+		font-family: "Gotham Pro Light"
+		font-weight: 300
+		letter-spacing: 0.12px
+		margin-left: auto
+		margin-right: auto
+		&-link
+			color: $link-color
+			font-family: "Gotham Pro Medium"
+			font-weight: 500
+			letter-spacing: 0.12px
+			&:hover
+				color: darken($link-color, 15)
+				text-decoration: none
+	&_designer
+		color: #101010
+		font-family: "Gotham Pro Regular"
+		font-size: 12px
+		font-weight: 400
+		letter-spacing: 0.12px
+		&_name
+			color: #101010
+			text-decoration: underline
+			&:hover
+				color: lighten(#101010, 35)

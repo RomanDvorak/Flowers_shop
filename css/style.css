@@ -1,0 +1,1842 @@
+@charset "UTF-8";
+
+body {
+  background: #292929;
+  color: #fff;
+  position: relative;
+}
+
+.section_title {
+  font-family: "Gotham Pro Medium";
+  font-size: 34px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.34px;
+  text-align: center;
+}
+
+.section_subtitle {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Gotham Pro Light";
+  font-weight: 300;
+  letter-spacing: 0.18px;
+  max-width: 570px;
+  color: #c6c6c6;
+  margin-bottom: 100px;
+}
+
+.section_subtitle_big {
+  font-family: "Gotham Pro Medium";
+  font-weight: 500;
+  letter-spacing: 0.18px;
+  color: #ffffff;
+}
+
+.site-maker {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  color: #e6e6e6;
+}
+
+.site-maker:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+* {
+  outline: none !important;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+hr {
+  background-color: #4c4c4c;
+  margin-bottom: 99px;
+}
+
+.bg-img_1 {
+  position: absolute;
+  background: url("../img/bg/bg-flower_1.png") center no-repeat;
+  background-size: cover;
+  top: 0;
+  /* right: 737px */
+  right: 40%;
+  width: 39px;
+  height: 24px;
+  z-index: -1;
+}
+
+.bg-img_2 {
+  position: absolute;
+  background: url("../img/bg/bg-flower_2.png") center no-repeat;
+  background-size: cover;
+  top: 148px;
+  /* top: 17% */
+  /* left: 295px */
+  left: 16%;
+  width: 93px;
+  height: 153px;
+  z-index: -1;
+}
+
+.bg-img_3 {
+  position: absolute;
+  background: url("../img/bg/bg-flower_3.png") center no-repeat;
+  background-size: cover;
+  top: 409px;
+  /* top: 45% */
+  /* right: 160px */
+  right: 10%;
+  width: 71px;
+  height: 61px;
+  z-index: -1;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  height: 100%;
+  width: 22px;
+}
+
+.slider-arrow_main_left {
+  width: 8px;
+  height: 14px;
+  background: url("../img/main/slider/main_slider_arrow-left.png") center no-repeat;
+  left: 0;
+  top: 40%;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider-arrow_main_left:hover {
+  background: url("../img/main/slider/main_slider_arrow-left-active.png");
+  cursor: pointer;
+}
+
+.slider-arrow_main_right {
+  width: 8px;
+  height: 14px;
+  background: url("../img/main/slider/main_slider_arrow-right.png") center no-repeat;
+  right: 0;
+  top: 40%;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider-arrow_main_right:hover {
+  background: url("../img/main/slider/main_slider_arrow-right-active.png");
+  cursor: pointer;
+}
+
+.slider-arrow_advantages_left {
+  width: 21px;
+  height: 34px;
+  background: url("../img/advantages/clients/slider/advantages-slider_arrow-left.png") center no-repeat;
+  left: 0;
+  top: 40%;
+}
+
+.slider-arrow_advantages_left:hover {
+  cursor: pointer;
+}
+
+.slider-arrow_advantages_right {
+  width: 21px;
+  height: 34px;
+  background: url("../img/advantages/clients/slider/advantages-slider_arrow-right.png") center no-repeat;
+  right: 0;
+  top: 40%;
+}
+
+.slider-arrow_advantages_right:hover {
+  cursor: pointer;
+}
+
+.button {
+  border: 3px solid transparent;
+  background-color: #ff2e55;
+  color: #ffffff;
+  font-family: "Gotham Pro Regular";
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.18px;
+}
+
+.button:hover {
+  -webkit-box-shadow: 0 0 16px rgba(242, 72, 65, 0.39);
+  box-shadow: 0 0 16px rgba(242, 72, 65, 0.39);
+  border: 3px solid #ff2e55;
+  background-color: #ff1844;
+  cursor: pointer;
+}
+
+.contacts_phone {
+  font-family: "Gotham Pro Regular";
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: #fff;
+}
+
+.contacts_phone:hover {
+  color: #d1d1d1;
+  text-decoration: none;
+}
+
+.header {
+  height: 150px;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 77px;
+}
+
+.header_img {
+  margin-top: 17px;
+  width: 156px;
+  height: 40px;
+  background: url("../img/header/header_logo.png");
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header_text {
+  margin-top: 17px;
+  width: 119px;
+  font-size: 11px;
+  font-weight: 300;
+  font-family: "Gotham Pro Light";
+  letter-spacing: 0.12px;
+  color: #dfdfdf;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header_text-link {
+  color: #ff3469;
+  font-family: "Gotham Pro Medium";
+  font-weight: 500;
+  letter-spacing: 0.12px;
+  text-decoration: none;
+}
+
+.header_text-link:hover {
+  color: #e7003c;
+  text-decoration: none;
+}
+
+.header-contacts_phone {
+  font-family: "Gotham Pro Regular";
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: #fff;
+}
+
+.header-contacts_phone:hover {
+  color: #d1d1d1;
+  text-decoration: none;
+}
+
+.header-contacts_phone_text {
+  color: #9b9b9b;
+  font-family: "Gotham Pro Regular";
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.12px;
+}
+
+.header-contacts_phone_text_link {
+  color: #d70038;
+  font-family: "Gotham Pro Regular";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.16px;
+  text-decoration: underline;
+}
+
+.header-contacts_phone_text_link:hover {
+  color: #c30033;
+  text-decoration: none;
+}
+
+.main {
+  text-align: center;
+  margin-bottom: 77px;
+}
+
+.main-slider {
+  margin-bottom: 65px;
+}
+
+.main-slider_item {
+  height: 90px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-slider_item:hover {
+  cursor: pointer;
+}
+
+.main-slider_item_img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90px;
+  height: 90px;
+}
+
+.main_suggestion {
+  font-size: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Gotham Pro Regular";
+  letter-spacing: 0.19px;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.main_suggestion-bold {
+  font-family: "Gotham Pro Medium";
+  font-weight: 500;
+}
+
+.main_button {
+  width: 300px;
+  height: 70px;
+}
+
+.advantages_title {
+  font-family: "Gotham Pro Regular";
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  text-align: center;
+  margin-bottom: 96px;
+}
+
+.advantages-slider {
+  margin-bottom: 98px;
+}
+
+.advantages-slider_img {
+  width: 220px;
+  height: 220px;
+  background: url("../img/advantages/clients/client-img.png");
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.advantages-slider_img_text {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Gotham Pro Medium";
+}
+
+.advantages-slider_img_text_town {
+  font-family: "Gotham Pro Regular";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.18px;
+}
+
+.advantages-slider_text {
+  max-width: 481px;
+  font-family: "Gotham Pro Regular";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.18px;
+}
+
+.advantages-slider_text-link {
+  color: #f24841;
+  text-decoration: underline;
+}
+
+.advantages-slider_text-link:hover {
+  color: #f03129;
+  cursor: pointer;
+}
+
+.features-blocks {
+  margin-bottom: 101px;
+}
+
+.features-blocks .features-block {
+  text-align: center;
+}
+
+.features-blocks .features-block_img {
+  max-height: 66px;
+  max-width: 66px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features-blocks .features-block_img img {
+  height: 100%;
+  width: 100%;
+}
+
+.features-blocks .features-block_descr {
+  width: 221px;
+  color: #ffffff;
+  font-family: "Gotham Pro Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features-blocks .features-block_descr_last {
+  width: 262px;
+}
+
+.shop {
+  text-align: center;
+  padding-bottom: 68px;
+}
+
+.shop_title {
+  font-family: "Gotham Pro Medium";
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-bottom: 27px;
+}
+
+.shop_title-red {
+  color: #ff1844;
+}
+
+.shop_subtitle {
+  color: #ffffff;
+  font-family: "Gotham Pro Regular";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.18px;
+  text-transform: none;
+  margin-bottom: 77px;
+  max-width: 794px;
+}
+
+.shop_item {
+  width: 210px;
+  height: 375px;
+  border: 3px solid #ffffff;
+  padding-top: 20px;
+  margin-bottom: 75px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shop_item_img {
+  width: 210px;
+  height: 72px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 23px;
+}
+
+.shop_item_img img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.shop_item_name {
+  font-family: "Gotham Pro Regular";
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+.shop_item_select-color {
+  font-family: "Gotham Pro Regular";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+}
+
+.shop_item_text-count {
+  font-family: "Gotham Pro Regular";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+}
+
+.shop_item_count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.shop_item_count_minus {
+  margin-top: 5px;
+}
+
+.shop_item_count_minus:hover {
+  cursor: pointer;
+}
+
+.shop_item_count_plus {
+  margin-top: 5px;
+}
+
+.shop_item_count_plus:hover {
+  cursor: pointer;
+}
+
+.shop_item_count_number {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 8px;
+  margin-right: 17px;
+  margin-left: 17px;
+}
+
+.shop_item_button {
+  width: 140px;
+  height: 40px;
+  background-color: #f24841;
+  font-family: "Gotham Pro Regular";
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.14px;
+  margin-bottom: 43px;
+}
+
+.shop_item_button:hover {
+  -webkit-box-shadow: 0 0 16px rgba(242, 72, 65, 0.39);
+  box-shadow: 0 0 16px rgba(242, 72, 65, 0.39);
+  background-color: #ff1844;
+  border: transparent;
+}
+
+.shop_link-more {
+  color: #f24841;
+  font-family: "Gotham Pro Regular";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+  text-decoration: underline;
+}
+
+.shop_link-more::after {
+  content: '';
+  margin-left: 7px;
+  margin-bottom: 2px;
+  width: 10px;
+  height: 4px;
+  background: url("../img/shop/shop_link-more_arrow.png") center no-repeat;
+  display: inline-block;
+}
+
+.shop_link-more:hover {
+  color: #ef1a11;
+}
+
+.colors {
+  margin-bottom: 7px;
+}
+
+.colors .color {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.colors .color:hover {
+  cursor: pointer;
+}
+
+.colors .color-white {
+  background-color: #ffffff;
+}
+
+.colors .color-white:hover {
+  -webkit-box-shadow: 0 0 16px #fff;
+  box-shadow: 0 0 16px #fff;
+}
+
+.colors .color-coffee {
+  background-color: #f7b496;
+}
+
+.colors .color-coffee:hover {
+  -webkit-box-shadow: 0 0 16px #f7b496;
+  box-shadow: 0 0 16px #f7b496;
+}
+
+.colors .color-lilac {
+  background-color: #ed366e;
+}
+
+.colors .color-lilac:hover {
+  -webkit-box-shadow: 0 0 16px #ed366e;
+  box-shadow: 0 0 16px #ed366e;
+}
+
+.colors .color-red {
+  background-color: #ff0000;
+}
+
+.colors .color-red:hover {
+  -webkit-box-shadow: 0 0 16px #ff0000;
+  box-shadow: 0 0 16px #ff0000;
+}
+
+.colors .color-blue {
+  background-color: #12129d;
+  margin-right: 0;
+}
+
+.colors .color-blue:hover {
+  -webkit-box-shadow: 0 0 16px #12129d;
+  box-shadow: 0 0 16px #12129d;
+}
+
+.offer {
+  background-color: #1a1a1a;
+  padding-top: 101px;
+  padding-bottom: 84px;
+  text-align: center;
+}
+
+.offer_title {
+  font-family: "Gotham Pro Regular";
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-bottom: 53px;
+}
+
+.offer_title_underline {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.offer_title_underline:hover {
+  color: #d9d9d9;
+  cursor: pointer;
+}
+
+.offer_small {
+  color: #ffffff;
+  font-family: "Gotham Pro Regular";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+}
+
+.offer-contacts_phone {
+  color: #ffffff;
+  font-family: "Gotham Pro Regular";
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 0.36px;
+}
+
+.offer-contacts_phone:hover {
+  color: #d1d1d1;
+  text-decoration: none;
+}
+
+.contacts {
+  padding-top: 52px;
+  padding-bottom: 40px;
+}
+
+.contacts_link {
+  color: #ffffff;
+  font-family: "Gotham Pro Regular";
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.18px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.contacts_link-container {
+  margin-bottom: 29px;
+}
+
+.contacts_link-delivery {
+  margin-right: 35px;
+}
+
+.contacts_link-delivery:hover {
+  color: #e6e6e6;
+}
+
+.contacts_link-payment:hover {
+  color: #e6e6e6;
+}
+
+.contacts_call_text {
+  font-family: "Gotham Pro Regular";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.16px;
+}
+
+.contacts_call_text_img {
+  margin-left: 20px;
+}
+
+.contacts_right_text {
+  font-family: "Gotham Pro Regular";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.14px;
+}
+
+.footer {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 43px;
+}
+
+.footer_img {
+  margin-top: 9px;
+  width: 156px;
+  height: 40px;
+  background: url("../img/footer/footer_logo.png") center no-repeat;
+}
+
+.footer_text {
+  width: 129px;
+  color: #292929;
+  font-size: 12px;
+  font-family: "Gotham Pro Light";
+  font-weight: 300;
+  letter-spacing: 0.12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer_text-link {
+  color: #ff3469;
+  font-family: "Gotham Pro Medium";
+  font-weight: 500;
+  letter-spacing: 0.12px;
+}
+
+.footer_text-link:hover {
+  color: #e7003c;
+  text-decoration: none;
+}
+
+.footer_designer {
+  color: #101010;
+  font-family: "Gotham Pro Regular";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.12px;
+}
+
+.footer_designer_name {
+  color: #101010;
+  text-decoration: underline;
+}
+
+.footer_designer_name:hover {
+  color: dimgray;
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.overlay .popup {
+  position: fixed;
+  left: 50%;
+  top: 100px;
+  width: 752px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: none;
+}
+
+.overlay .popup-close {
+  position: absolute;
+  right: -20px;
+  top: -37px;
+  font-size: 35px;
+  color: #fff;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.overlay .popup-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 71px;
+  margin: 0;
+  background-color: #cc0b22;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.overlay .popup-title span {
+  line-height: 70px;
+}
+
+.overlay .popup-form {
+  background: #101010;
+  padding: 35px 88px 50px 88px;
+  color: #fff;
+  border: 1px solid #5d5d5d;
+  border-top: none;
+}
+
+.overlay .popup-form-header {
+  padding: 0;
+  padding-top: 10px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+}
+
+.overlay .popup-form-header span {
+  font-size: 24px;
+}
+
+.overlay .popup-form__label {
+  display: block;
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.overlay .popup-form__input {
+  width: 365px;
+  height: 56px;
+  margin-top: 10px;
+  padding-left: 12px;
+  vertical-align: middle;
+  color: #373737;
+  font-size: 14px;
+  font-weight: 300;
+  border-radius: 4px;
+}
+
+.overlay .popup-form__btn {
+  width: 180px;
+  height: 56px;
+  margin-left: 16px;
+  margin-top: 17px;
+  vertical-align: middle;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  background-color: #ff2e55;
+  border-radius: 4px;
+  border: none;
+}
+
+.overlay .popup-form__btn:hover {
+  -webkit-box-shadow: 0 0 22px rgba(242, 72, 65, 0.5);
+  box-shadow: 0 0 22px rgba(242, 72, 65, 0.5);
+  background-color: #ff1844;
+  cursor: pointer;
+  border: none;
+}
+
+.overlay-rose {
+  position: fixed;
+  display: none;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.overlay-rose .popup-rose {
+  position: fixed;
+  display: none;
+  left: 50%;
+  top: 150px;
+  width: 516px;
+  height: 306px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #f8f6f0;
+  padding: 30px 58px 35px;
+}
+
+.overlay-rose .popup-rose-left_img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 57px;
+  height: 58px;
+  background: url("../img/modals/rose/modal-rose-img-left.png") center no-repeat;
+}
+
+.overlay-rose .popup-rose-right_img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 107px;
+  height: 93px;
+  background: url("../img/modals/rose/modal-rose-img-right.png") center no-repeat;
+}
+
+.overlay-rose .popup-rose-close {
+  position: absolute;
+  right: -50px;
+  top: 0;
+  font-size: 35px;
+  color: #fff;
+  font-weight: 300;
+  cursor: pointer;
+  border: 2px solid #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.overlay-rose .popup-rose-title {
+  color: #f64f6b;
+  font-family: "Gotham Pro Medium";
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.24px;
+  margin-bottom: 15px;
+}
+
+.overlay-rose .popup-rose-descr {
+  width: 410px;
+  color: #1c1c1c;
+  font-family: "Gotham Pro Regular";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.16px;
+}
+
+.overlay-lily {
+  position: fixed;
+  display: none;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.overlay-lily .popup-lily {
+  position: fixed;
+  display: none;
+  left: 50%;
+  top: 150px;
+  width: 516px;
+  height: 306px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #f8f6f0;
+  padding: 20px 58px 35px 45px;
+}
+
+.overlay-lily .popup-lily-right_img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: 107px;
+  height: 93px;
+  background: url("../img/modals/lily/modal-lily-img-right.png") center no-repeat;
+}
+
+.overlay-lily .popup-lily-close {
+  position: absolute;
+  right: -50px;
+  top: 0;
+  font-size: 35px;
+  color: #fff;
+  font-weight: 300;
+  cursor: pointer;
+  border: 2px solid #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.overlay-lily .popup-lily-title {
+  color: #f64f6b;
+  font-family: "Gotham Pro Medium";
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.24px;
+  margin-bottom: 10px;
+}
+
+.overlay-lily .popup-lily-descr {
+  width: 400px;
+  color: #1c1c1c;
+  font-family: "Gotham Pro Regular";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.16px;
+}
+
+.overlay-chrysanthemum {
+  position: fixed;
+  display: none;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.overlay-chrysanthemum .popup-chrysanthemum {
+  position: fixed;
+  display: none;
+  left: 50%;
+  top: 150px;
+  width: 516px;
+  height: 306px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #f8f6f0;
+  padding: 20px 58px 35px 45px;
+}
+
+.overlay-chrysanthemum .popup-chrysanthemum-right_img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: 107px;
+  height: 93px;
+  background: url("../img/modals/chrysanthemum/modal-chrysanthemum-img-right.png") center no-repeat;
+}
+
+.overlay-chrysanthemum .popup-chrysanthemum-close {
+  position: absolute;
+  right: -50px;
+  top: 0;
+  font-size: 35px;
+  color: #fff;
+  font-weight: 300;
+  cursor: pointer;
+  border: 2px solid #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.overlay-chrysanthemum .popup-chrysanthemum-title {
+  color: #f64f6b;
+  font-family: "Gotham Pro Medium";
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.24px;
+  margin-bottom: 10px;
+}
+
+.overlay-chrysanthemum .popup-chrysanthemum-descr {
+  width: 400px;
+  color: #1c1c1c;
+  font-family: "Gotham Pro Regular";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.16px;
+}
+
+.overlay-lilac {
+  position: fixed;
+  display: none;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.overlay-lilac .popup-lilac {
+  position: fixed;
+  display: none;
+  left: 50%;
+  top: 150px;
+  width: 516px;
+  height: 306px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #f8f6f0;
+  padding: 20px 58px 35px 45px;
+}
+
+.overlay-lilac .popup-lilac-right_img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: 107px;
+  height: 93px;
+  background: url("../img/modals/lilac/modal-lilac-img-right.png") center no-repeat;
+}
+
+.overlay-lilac .popup-lilac-close {
+  position: absolute;
+  right: -50px;
+  top: 0;
+  font-size: 35px;
+  color: #fff;
+  font-weight: 300;
+  cursor: pointer;
+  border: 2px solid #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.overlay-lilac .popup-lilac-title {
+  color: #f64f6b;
+  font-family: "Gotham Pro Medium";
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.24px;
+  margin-bottom: 10px;
+}
+
+.overlay-lilac .popup-lilac-descr {
+  width: 400px;
+  color: #1c1c1c;
+  font-family: "Gotham Pro Regular";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.16px;
+}
+
+.overlay-yellow_chrysanthemums {
+  position: fixed;
+  display: none;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.overlay-yellow_chrysanthemums .popup-yellow_chrysanthemums {
+  position: fixed;
+  display: none;
+  left: 50%;
+  top: 150px;
+  width: 516px;
+  height: 306px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #f8f6f0;
+  padding: 45px 58px 35px 58px;
+}
+
+.overlay-yellow_chrysanthemums .popup-yellow_chrysanthemums-right_img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: 107px;
+  height: 93px;
+  background: url("../img/modals/yellow_chrysanthemums/modal-yellow_chrysanthemums-img-right.png") center no-repeat;
+}
+
+.overlay-yellow_chrysanthemums .popup-yellow_chrysanthemums-close {
+  position: absolute;
+  right: -50px;
+  top: 0;
+  font-size: 35px;
+  color: #fff;
+  font-weight: 300;
+  cursor: pointer;
+  border: 2px solid #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.overlay-yellow_chrysanthemums .popup-yellow_chrysanthemums-title {
+  color: #f64f6b;
+  font-family: "Gotham Pro Medium";
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.24px;
+  margin-bottom: 10px;
+}
+
+.overlay-yellow_chrysanthemums .popup-yellow_chrysanthemums-descr {
+  width: 400px;
+  color: #1c1c1c;
+  font-family: "Gotham Pro Regular";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.16px;
+}
+
+.overlay-lily-2 {
+  position: fixed;
+  display: none;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.overlay-lily-2 .popup-lily-2 {
+  position: fixed;
+  display: none;
+  left: 50%;
+  top: 150px;
+  width: 516px;
+  height: 306px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #f8f6f0;
+  padding: 20px 58px 35px 45px;
+}
+
+.overlay-lily-2 .popup-lily-2-right_img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: 107px;
+  height: 93px;
+  background: url("../img/modals/lily/modal-lily-2-img-right.png") center no-repeat;
+}
+
+.overlay-lily-2 .popup-lily-2-close {
+  position: absolute;
+  right: -50px;
+  top: 0;
+  font-size: 35px;
+  color: #fff;
+  font-weight: 300;
+  cursor: pointer;
+  border: 2px solid #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.overlay-lily-2 .popup-lily-2-title {
+  color: #f64f6b;
+  font-family: "Gotham Pro Medium";
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.24px;
+  margin-bottom: 10px;
+}
+
+.overlay-lily-2 .popup-lily-2-descr {
+  width: 400px;
+  color: #1c1c1c;
+  font-family: "Gotham Pro Regular";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.16px;
+}
+
+.popup-left_img {
+  position: absolute;
+  width: 86px;
+  height: 142px;
+  background: url("../img/modals/modals-left-img.png") center no-repeat;
+  left: 25%;
+  top: 260px;
+}
+
+.popup-right_img {
+  position: absolute;
+  background: url("../img/modals/modals-right-img.png") center no-repeat;
+  top: 400px;
+  right: 30%;
+  width: 36px;
+  height: 30px;
+}
+
+/* Букеты */
+
+.overlay-bouquet {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.overlay-bouquet .bouquet-1 {
+  display: none;
+  position: fixed;
+  height: 60%;
+  width: 70%;
+  top: 15%;
+  left: 15%;
+  border: #4c4c4c solid 2px;
+}
+
+.overlay-bouquet .bouquet-1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-bouquet .bouquet-2 {
+  display: none;
+  position: fixed;
+  height: 60%;
+  width: 70%;
+  top: 15%;
+  left: 15%;
+  border: #4c4c4c solid 2px;
+}
+
+.overlay-bouquet .bouquet-2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-bouquet .bouquet-3 {
+  display: none;
+  position: fixed;
+  height: 60%;
+  width: 70%;
+  top: 15%;
+  left: 15%;
+  border: #4c4c4c solid 2px;
+}
+
+.overlay-bouquet .bouquet-3 img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Окно благодарности */
+
+.overlay-thanks {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.overlay-thanks .popup-thanks {
+  position: fixed;
+  left: 50%;
+  top: 200px;
+  width: 460px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #F4ECD9;
+  padding: 0;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.overlay-thanks .popup-thanks_text p {
+  color: #101010;
+  font-family: "Gotham Pro Medium";
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.16px;
+}
+
+.overlay-thanks .popup-thanks_button {
+  background-color: #101010;
+  height: 50px;
+  width: 50%;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-family: "Gotham Pro medium";
+  font-weight: 500;
+  border-radius: 5px;
+  color: #e0e0e0;
+}
+
+.overlay-thanks .popup-thanks_button:hover {
+  border: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #fff;
+}
+
+/* Медиа запрос до 1920 пикселей */
+
+@media (max-width: 1920px) {
+  .popup-left_img {
+    left: 22%;
+  }
+
+  .popup-right_img {
+    right: 27%;
+  }
+}
+
+/* Медиа запрос до 1400 пикселей */
+
+@media (max-width: 1400px) {
+  .popup-left_img {
+    left: 13%;
+  }
+
+  .popup-right_img {
+    right: 14%;
+  }
+}
+
+/* Медиа запрос до 1199 пикселей */
+
+@media (max-width: 1199px) {
+  .popup-left_img {
+    display: none;
+  }
+
+  .popup-right_img {
+    display: none;
+  }
+
+  .shop_item {
+    margin-bottom: 62px;
+  }
+}
+
+/* Медиа запрос до 991 пикселя */
+
+@media (max-width: 991px) {
+  .button:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: transparent;
+    background-color: #ff2e55;
+  }
+
+  .header_text-link:hover {
+    color: #ff3469;
+  }
+
+  .header-contacts_phone:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .header-contacts_phone_text_link:hover {
+    color: #d70038;
+    text-decoration: underline;
+  }
+
+  .advantages-slider_text-link:hover {
+    color: #f24841;
+  }
+
+  .shop_item_button:hover {
+    background-color: #f24841;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .shop_link-more:hover {
+    color: #f24841;
+  }
+
+  .slider-arrow_main_right:hover {
+    -webkit-transition: 0;
+    transition: 0;
+    background: url("../img/main/slider/main_slider_arrow-right.png");
+  }
+
+  .slider-arrow_main_left:hover {
+    -webkit-transition: 0;
+    transition: 0;
+    background: url("../img/main/slider/main_slider_arrow-left.png");
+  }
+
+  .advantages-slider_text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align-last: center;
+  }
+
+  .advantages-slider_img {
+    margin-bottom: 15px;
+  }
+
+  .contacts_link-delivery:hover {
+    color: #fff;
+  }
+
+  .contacts_link-payment:hover {
+    color: #fff;
+  }
+
+  .offer_title_underline:hover {
+    color: #fff;
+  }
+
+  .offer-contacts_phone:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .contacts_right_text_phone:hover {
+    color: #ffffff;
+  }
+
+  .footer_text-link:hover {
+    color: #ff3469;
+    text-decoration: none;
+  }
+
+  .footer_designer_name:hover {
+    color: #101010;
+  }
+
+  .overlay .popup-form__btn:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #ff2e55;
+  }
+}
+
+/* Медиа запрос до 840 пикселей */
+
+@media (max-width: 840px) {
+  .overlay .popup {
+    width: 340px;
+    top: 30px;
+  }
+
+  .overlay .popup-title {
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .overlay .popup-form {
+    padding: 0px 0px 20px 0px;
+  }
+
+  .overlay .popup-form-header .little-text {
+    font-size: 20px;
+  }
+
+  .overlay .popup-form__input {
+    width: 230px;
+  }
+
+  .overlay .popup-form__btn {
+    margin-left: 0;
+  }
+
+  .overlay-thanks .popup-thanks {
+    width: 340px;
+  }
+
+  .overlay-thanks .popup-thanks_text p {
+    font-size: 22px;
+  }
+
+  .overlay-thanks .popup-thanks_button {
+    width: 50%;
+  }
+}
+
+/* Медиа запрос до 767 пикселей */
+
+@media (max-width: 767px) {
+  .header {
+    height: 250px;
+  }
+
+  .header-contacts_phone {
+    font-size: 18px;
+  }
+
+  .section_title {
+    font-size: 26px;
+  }
+
+  .section_subtitle {
+    font-size: 16px;
+    max-width: 360px;
+  }
+
+  .slider-arrow_advantages_left {
+    top: 22%;
+  }
+
+  .slider-arrow_advantages_right {
+    top: 22%;
+  }
+
+  .shop_item {
+    margin-bottom: 62px;
+  }
+
+  .contacts_call {
+    margin-bottom: 20px;
+  }
+
+  .footer_img {
+    margin-bottom: 15px;
+  }
+}
+
+/* Медиа запрос до 575 пикселей */
+
+@media (max-width: 575px) {
+  .main_button {
+    width: 250px;
+    height: 60px;
+    font-size: 17px;
+  }
+
+  .slider-arrow_advantages_left {
+    top: 93px;
+  }
+
+  .slider-arrow_advantages_right {
+    top: 93px;
+  }
+
+  .shop_item {
+    margin-bottom: 35px;
+  }
+
+  .offer_title {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 35px;
+  }
+
+  .offer-contacts_phone {
+    font-size: 22px;
+  }
+
+  .contacts_call_text_img {
+    margin-left: 10px;
+  }
+
+  .footer_img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Медиа запрос до 450 пикселей */
+
+@media (max-width: 450px) {
+  .slider-arrow_advantages_left {
+    top: 95px;
+  }
+
+  .slider-arrow_advantages_right {
+    top: 95px;
+  }
+}
+
+/* Медиа запрос до 400 пикселей */
+
+@media (max-width: 400px) {
+  .overlay .popup {
+    width: 245px;
+    top: 30px;
+  }
+
+  .overlay .popup-title {
+    height: 40px;
+  }
+
+  .overlay .popup-title span {
+    line-height: 26px;
+  }
+
+  .overlay .popup-form {
+    padding: 0px 0px 20px 0px;
+  }
+
+  .overlay .popup-form-header .little-text {
+    font-size: 20px;
+  }
+
+  .overlay .popup-form__input {
+    width: 180px;
+  }
+
+  .overlay .popup-form__btn {
+    margin-left: 0;
+  }
+
+  .overlay-thanks .popup-thanks {
+    top: 30px;
+    width: 245px;
+  }
+}
+
+/* Медиа запрос до 340 пикселей */
+
+@media (max-width: 340px) {
+  .advantages-slider_text {
+    text-align-last: justify;
+  }
+}
